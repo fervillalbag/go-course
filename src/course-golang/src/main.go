@@ -1,31 +1,11 @@
 package main
 
-import "fmt"
-
-func normalFuncion(message string) {
-	fmt.Println(message)
-}
-
-func tripleArgument(a, b int, c string) {
-	fmt.Println(a, b, c)
-}
-
-func returnDoubleValue(a int) int {
-	return a * 2
-}
-
-func returnMoreOneValue(a int) (c, d int) {
-	return a, a * 2
-}
+import (
+	"fmt"
+)
 
 func main() {
-	// normalFuncion("A normal message")
-	// tripleArgument(2, 3, "Triple argumentos")
-	// value := returnDoubleValue(10)
-	// fmt.Println(value)
-	value1, value2 := returnMoreOneValue(2)
-	// value1, _ := returnMoreOneValue(2)
-	fmt.Println(value1, value2)
+
 }
 
 /* ==============================================
@@ -129,3 +109,124 @@ func main() {
 // Imprime el tipo de dato
 // fmt.Printf("HelloMessage: %T\n", helloMessage)
 // fmt.Printf("Cantidad cursos: %T\n", cursos)
+
+// ===== Funciones ===== //
+// func normalFuncion(message string) {
+// 	fmt.Println(message)
+// }
+
+// func tripleArgument(a, b int, c string) {
+// 	fmt.Println(a, b, c)
+// }
+
+// func returnDoubleValue(a int) int {
+// 	return a * 2
+// }
+
+// func returnMoreOneValue(a int) (c, d int) {
+// 	return a, a * 2
+// }
+
+// normalFuncion("A normal message")
+// tripleArgument(2, 3, "Triple argumentos")
+// value := returnDoubleValue(10)
+// fmt.Println(value)
+// value1, value2 := returnMoreOneValue(2)
+// value1, _ := returnMoreOneValue(2)
+// fmt.Println(value1, value2)
+
+// ===== Ciclo For ===== //
+// for conditional
+// for i := 0; i <= 10; i++ {
+// 	fmt.Println(i)
+// }
+
+// fmt.Printf("\n")
+
+// for while
+// counter := 0
+// for counter < 10 {
+// 	fmt.Println(counter)
+// 	counter++
+// }
+
+// for forever
+// counterForever := 0
+// for {
+// 	fmt.Println(counterForever)
+// 	counterForever++
+// }
+
+// ===== Condicionales ===== //
+// valor1 := 1
+// valor2 := 2
+
+// if valor1 == 1 {
+// 	fmt.Println("Es 1")
+// } else {
+// 	fmt.Println("No es 1")
+// }
+
+// with AND
+// if valor1 == 1 && valor2 == 2 {
+// 	fmt.Println("Es verdad AND")
+// } else {
+// 	fmt.Println("No es verdad AND")
+// }
+
+// with OR
+// if valor1 == 0 || valor2 == 2 {
+// 	fmt.Println("Es verdad OR")
+// }
+
+// convertir texto a numero
+// value, err := strconv.Atoi("fads")
+// if err != nil {
+// 	log.Fatal(err)
+// }
+// fmt.Println(value, err)
+
+// modulo := 4 % 2
+
+// switch modulo {
+// case 0:
+// 	fmt.Println("Es par")
+// default:
+// 	fmt.Println("Es impar")
+// }
+
+// switch modulo2 := 4 % 2; modulo2 {
+// case 0:
+// 	fmt.Println("Es par")
+// default:
+// 	fmt.Println("Es impar")
+// }
+
+// value2 := 200
+// switch {
+// case value2 > 100:
+// 	fmt.Println("Es mayor a 100")
+// case value2 < 0:
+// 	fmt.Println("Es menor a 0")
+// default:
+// 	fmt.Println("No condicion")
+// }
+
+// defer
+// defer fmt.Println("Hola")
+// fmt.Println("Mundo")
+
+// // continue y break
+// for i := 0; i < 10; i++ {
+// 	fmt.Println(i)
+
+// 	if i == 2 {
+// 		fmt.Println("Es 2")
+// 		continue
+// 	}
+
+// 	if i == 8 {
+// 		fmt.Println("Break")
+// 		break
+// 	}
+// }
